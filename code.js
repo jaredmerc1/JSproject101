@@ -15,6 +15,7 @@ export function base64(opts = {}) {
           }
 
 //helllo
+        
   let baseDirectory = '.';
 let port = 8080;
 let host = '0.0.0.0';
@@ -30,3 +31,7 @@ for(let i = 0; i < process.argv.length; ++i) {
     host = process.argv[i + 1];
   } 
 }
+  const extname = path.extname(filePath);
+    let contentType = "text/html";
+    switch (extname) {
+    //?
